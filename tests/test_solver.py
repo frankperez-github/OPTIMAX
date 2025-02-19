@@ -1,8 +1,6 @@
-# tests/test_solver.py
-
 import unittest
 from optimax.parser import ProblemInstance
-from solver import Solver
+from optimax.solver import Solver
 
 class TestSolver(unittest.TestCase):
     def test_solver_lp(self):

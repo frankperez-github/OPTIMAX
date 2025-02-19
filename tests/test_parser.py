@@ -1,5 +1,3 @@
-# tests/test_parser.py
-
 import unittest
 from optimax.parser import ProblemInstance
 

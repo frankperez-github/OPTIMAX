@@ -167,10 +167,18 @@
     },
     {
         "label": "Solver",
-        "importPath": "solver",
-        "description": "solver",
+        "importPath": "optimax.solver",
+        "description": "optimax.solver",
         "isExtraImport": true,
-        "detail": "solver",
+        "detail": "optimax.solver",
+        "documentation": {}
+    },
+    {
+        "label": "Solver",
+        "importPath": "optimax.solver",
+        "description": "optimax.solver",
+        "isExtraImport": true,
+        "detail": "optimax.solver",
         "documentation": {}
     },
     {
@@ -188,14 +196,6 @@
         "description": "optimax.selector",
         "isExtraImport": true,
         "detail": "optimax.selector",
-        "documentation": {}
-    },
-    {
-        "label": "Solver",
-        "importPath": "optimax.solver",
-        "description": "optimax.solver",
-        "isExtraImport": true,
-        "detail": "optimax.solver",
         "documentation": {}
     },
     {
