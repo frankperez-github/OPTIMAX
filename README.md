@@ -45,6 +45,6 @@ This will enable tracking and plotting the convergence graph.
 
 Optimax can automatically select the best algorithm for a given problem and provides tools for visualizing the solution, including the feasible region and convergence of the optimization process.
 
----
+--- 
+That's it! This should help you run the project smoothly and understand the core functionality. If you need more help to run the project, please don't hessitate in contact me!
 
-That's it! This should help you run the project smoothly and understand the core functionality. Let me know if you need any more details!
