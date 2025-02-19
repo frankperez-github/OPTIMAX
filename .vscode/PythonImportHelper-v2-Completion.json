@@ -1,0 +1,282 @@
+[
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "ProblemInstance",
+        "importPath": "optimax.parser",
+        "description": "optimax.parser",
+        "isExtraImport": true,
+        "detail": "optimax.parser",
+        "documentation": {}
+    },
+    {
+        "label": "ProblemInstance",
+        "importPath": "optimax.parser",
+        "description": "optimax.parser",
+        "isExtraImport": true,
+        "detail": "optimax.parser",
+        "documentation": {}
+    },
+    {
+        "label": "ProblemInstance",
+        "importPath": "optimax.parser",
+        "description": "optimax.parser",
+        "isExtraImport": true,
+        "detail": "optimax.parser",
+        "documentation": {}
+    },
+    {
+        "label": "ProblemInstance",
+        "importPath": "optimax.parser",
+        "description": "optimax.parser",
+        "isExtraImport": true,
+        "detail": "optimax.parser",
+        "documentation": {}
+    },
+    {
+        "label": "ProblemInstance",
+        "importPath": "optimax.parser",
+        "description": "optimax.parser",
+        "isExtraImport": true,
+        "detail": "optimax.parser",
+        "documentation": {}
+    },
+    {
+        "label": "ProblemInstance",
+        "importPath": "optimax.parser",
+        "description": "optimax.parser",
+        "isExtraImport": true,
+        "detail": "optimax.parser",
+        "documentation": {}
+    },
+    {
+        "label": "linprog",
+        "importPath": "scipy.optimize",
+        "description": "scipy.optimize",
+        "isExtraImport": true,
+        "detail": "scipy.optimize",
+        "documentation": {}
+    },
+    {
+        "label": "pulp",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pulp",
+        "description": "pulp",
+        "detail": "pulp",
+        "documentation": {}
+    },
+    {
+        "label": "validate_dimensions",
+        "importPath": "optimax.utils",
+        "description": "optimax.utils",
+        "isExtraImport": true,
+        "detail": "optimax.utils",
+        "documentation": {}
+    },
+    {
+        "label": "format_solution",
+        "importPath": "optimax.utils",
+        "description": "optimax.utils",
+        "isExtraImport": true,
+        "detail": "optimax.utils",
+        "documentation": {}
+    },
+    {
+        "label": "Visualizer",
+        "importPath": "optimax.visualizer",
+        "description": "optimax.visualizer",
+        "isExtraImport": true,
+        "detail": "optimax.visualizer",
+        "documentation": {}
+    },
+    {
+        "label": "Visualizer",
+        "importPath": "optimax.visualizer",
+        "description": "optimax.visualizer",
+        "isExtraImport": true,
+        "detail": "optimax.visualizer",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "networkx",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "networkx",
+        "description": "networkx",
+        "detail": "networkx",
+        "documentation": {}
+    },
+    {
+        "label": "graphviz_layout",
+        "importPath": "networkx.drawing.nx_agraph",
+        "description": "networkx.drawing.nx_agraph",
+        "isExtraImport": true,
+        "detail": "networkx.drawing.nx_agraph",
+        "documentation": {}
+    },
+    {
+        "label": "unittest",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "unittest",
+        "description": "unittest",
+        "detail": "unittest",
+        "documentation": {}
+    },
+    {
+        "label": "Solver",
+        "importPath": "solver",
+        "description": "solver",
+        "isExtraImport": true,
+        "detail": "solver",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "AlgorithmSelector",
+        "importPath": "optimax.selector",
+        "description": "optimax.selector",
+        "isExtraImport": true,
+        "detail": "optimax.selector",
+        "documentation": {}
+    },
+    {
+        "label": "Solver",
+        "importPath": "optimax.solver",
+        "description": "optimax.solver",
+        "isExtraImport": true,
+        "detail": "optimax.solver",
+        "documentation": {}
+    },
+    {
+        "label": "ProblemInstance",
+        "kind": 6,
+        "importPath": "optimax.parser",
+        "description": "optimax.parser",
+        "peekOfCode": "class ProblemInstance:\n    def __init__(self, objective: str, function_objective: List[float], constraints: List[Dict], variables_integer: List[bool]):\n        self.objective = objective.lower()\n        self.function_objective = function_objective\n        self.constraints = constraints\n        self.variables_integer = variables_integer\n        self.validate()\n    def validate(self):\n        assert self.objective in [\"maximizar\", \"minimizar\"], \"Objective must be 'maximizar' or 'minimizar'\"\n        assert len(self.function_objective) == len(self.variables_integer), \"Mismatch between objective function and variable count\"",
+        "detail": "optimax.parser",
+        "documentation": {}
+    },
+    {
+        "label": "AlgorithmSelector",
+        "kind": 6,
+        "importPath": "optimax.selector",
+        "description": "optimax.selector",
+        "peekOfCode": "class AlgorithmSelector:\n    @staticmethod\n    def is_zero_vector_feasible(problem: ProblemInstance) -> bool:\n        \"\"\"\n        Checks if the zero vector is a feasible solution for the given problem.\n        This is a heuristic to decide if a basic feasible solution exists.\n        Parameters:\n            problem (ProblemInstance): The optimization problem instance.\n        Returns:\n            bool: True if the zero vector satisfies all constraints, False otherwise.",
+        "detail": "optimax.selector",
+        "documentation": {}
+    },
+    {
+        "label": "Solver",
+        "kind": 6,
+        "importPath": "optimax.solver",
+        "description": "optimax.solver",
+        "peekOfCode": "class Solver:\n    @staticmethod\n    def solve_lp(problem: ProblemInstance, method: str = 'highs') -> dict:\n        \"\"\"\n        Solves a linear programming problem using scipy.optimize.linprog.\n        Parameters:\n            problem (ProblemInstance): The problem instance.\n            method (str): The solver method. Use 'highs' for simplex and 'highs-ds' for dual simplex.\n        Returns:\n            dict: A dictionary containing the solution status, optimal value, and variable assignments.",
+        "detail": "optimax.solver",
+        "documentation": {}
+    },
+    {
+        "label": "validate_dimensions",
+        "kind": 2,
+        "importPath": "optimax.utils",
+        "description": "optimax.utils",
+        "peekOfCode": "def validate_dimensions(problem_instance):\n    \"\"\"\n    Validates that the dimensions of the objective function and constraints match.\n    Raises:\n        ValueError: If a constraint's coefficient length does not match the number of variables.\n    \"\"\"\n    num_vars = len(problem_instance.function_objective)\n    for constraint in problem_instance.constraints:\n        if len(constraint.get(\"coeficientes\", [])) != num_vars:\n            raise ValueError(\"Mismatch in dimensions: each constraint's coefficients length must match number of variables.\")",
+        "detail": "optimax.utils",
+        "documentation": {}
+    },
+    {
+        "label": "format_solution",
+        "kind": 2,
+        "importPath": "optimax.utils",
+        "description": "optimax.utils",
+        "peekOfCode": "def format_solution(solution):\n    \"\"\"\n    Formats the solution dictionary into a human-readable string.\n    Parameters:\n        solution (dict): The solution dictionary.\n    Returns:\n        str: A formatted string representation of the solution.\n    \"\"\"\n    if \"variables\" in solution:\n        vars_str = \", \".join([f\"x{i} = {val:.2f}\" for i, val in enumerate(solution[\"variables\"])])",
+        "detail": "optimax.utils",
+        "documentation": {}
+    },
+    {
+        "label": "Visualizer",
+        "kind": 6,
+        "importPath": "optimax.visualizer",
+        "description": "optimax.visualizer",
+        "peekOfCode": "class Visualizer:\n    @staticmethod\n    def plot_feasible_region(problem: ProblemInstance, solution: dict, filename=\"feasible_region.png\"):\n        \"\"\"\n        Visualizes the feasible region for 2-variable LP problems.\n        Plots constraint lines, shades the feasible region, and marks the optimal solution.\n        Parameters:\n            problem (ProblemInstance): The optimization problem instance.\n            solution (dict): The solution dictionary with at least 'variables' key.\n            filename (str): The file name where the plot will be saved.",
+        "detail": "optimax.visualizer",
+        "documentation": {}
+    },
+    {
+        "label": "TestParser",
+        "kind": 6,
+        "importPath": "tests.test_parser",
+        "description": "tests.test_parser",
+        "peekOfCode": "class TestParser(unittest.TestCase):\n    def test_valid_json(self):\n        json_input = '''\n        {\n            \"objetivo\": \"maximizar\",\n            \"funcion_objetivo\": [5, 3],\n            \"restricciones\": [\n                {\"coeficientes\": [2, 1], \"signo\": \"<=\", \"valor\": 10},\n                {\"coeficientes\": [1, 2], \"signo\": \"<=\", \"valor\": 8}\n            ],",
+        "detail": "tests.test_parser",
+        "documentation": {}
+    },
+    {
+        "label": "TestSolver",
+        "kind": 6,
+        "importPath": "tests.test_solver",
+        "description": "tests.test_solver",
+        "peekOfCode": "class TestSolver(unittest.TestCase):\n    def test_solver_lp(self):\n        json_input = '''\n        {\n            \"objetivo\": \"maximizar\",\n            \"funcion_objetivo\": [5, 3],\n            \"restricciones\": [\n                {\"coeficientes\": [2, 1], \"signo\": \"<=\", \"valor\": 10},\n                {\"coeficientes\": [1, 2], \"signo\": \"<=\", \"valor\": 8}\n            ],",
+        "detail": "tests.test_solver",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def main():\n    if len(sys.argv) < 2:\n        print(\"Usage: python main.py <path_to_json_file>\")\n        sys.exit(1)\n    json_file_path = sys.argv[1]\n    # Read the JSON input file\n    try:\n        with open(json_file_path, 'r') as f:\n            json_input = f.read()\n    except Exception as e:",
+        "detail": "main",
+        "documentation": {}
+    }
+]

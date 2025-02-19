@@ -1,0 +1,9 @@
+{
+    "objetivo": "maximizar",
+    "funcion_objetivo": [4, 3],
+    "restricciones": [
+        {"coeficientes": [1, 2], "signo": "<=", "valor": 8},
+        {"coeficientes": [3, 1], "signo": "<=", "valor": 9}
+    ],
+    "variables_enteras": [false, false]
+}
